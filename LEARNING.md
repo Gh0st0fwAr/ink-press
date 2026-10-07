@@ -27,10 +27,13 @@
 - [ ] **5. Admin list** — таблица постов
 - [ ] **6. Admin form create** — RHF
 - [ ] **7. Edit + status** — draft / published
-- [ ] **8. Persist** — storage или простой JSON/API-слой
-- [ ] **9. Auth gate** — учебный логин в admin
-- [ ] **10. UX states** — loading / error / empty
-- [ ] **11. Deploy + README** — Vercel или Pages-аналог
+- [ ] **8. Persist** — переход с mock на API
+- [ ] **9. Backend** — Node (Express или аналог) + **PostgreSQL** (SQL руками / `pg`, без Supabase/Prisma как ядра)
+- [ ] **10. Auth gate** — учебный логин в admin
+- [ ] **11. UX states** — loading / error / empty
+- [ ] **12. Deploy + README** — фронт (Vercel и т.п.) + API/БД на free tier
+
+**Ориентир бэка (зафиксировано):** Node + PostgreSQL «в чистом виде» — чаще так пишут в вакансиях. Prisma/Supabase не цель пета (можно упомянуть позже, если сами захотим).
 
 Шаги уточним по ходу; порядок может чуть съехать под Next-детали.
 

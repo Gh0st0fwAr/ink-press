@@ -17,6 +17,7 @@
 - React 19 + TypeScript
 - SCSS (design tokens)
 - дальше по шагам: RHF, TanStack Query (где уместно), Context UI prefs
+- позже: **Node API + PostgreSQL** (без Supabase/Prisma как основного стека)
 
 ## Dev
 
