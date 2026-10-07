@@ -19,7 +19,7 @@
 
 ## Чеклист микрошагов
 
-- [x] **0. Setup** — Next App Router, `src/`, Tailwind, git + origin *(наставник)*
+- [x] **0. Setup** — Next App Router, `src/`, SCSS tokens, git + origin *(наставник)*
 - [ ] **1. Домен + mock** — типы `Post`, seed, публичный список (Server Component)
 - [ ] **2. Detail** — `/posts/[slug]`
 - [ ] **3. Фильтры** — поиск / теги (client island)

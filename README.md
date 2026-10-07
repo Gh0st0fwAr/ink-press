@@ -15,7 +15,7 @@
 
 - Next.js 16 (App Router)
 - React 19 + TypeScript
-- Tailwind CSS 4
+- SCSS (design tokens)
 - дальше по шагам: RHF, TanStack Query (где уместно), Context UI prefs
 
 ## Dev
