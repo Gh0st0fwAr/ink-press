@@ -15,7 +15,7 @@
 
 - Next.js 16 (App Router)
 - React 19 + TypeScript
-- SCSS (design tokens)
+- SCSS: `styles/main.scss` → normalize, base, `components/*`
 - дальше по шагам: RHF, TanStack Query (где уместно), Context UI prefs
 - позже: **Node API + PostgreSQL** (без Supabase/Prisma как основного стека)
 

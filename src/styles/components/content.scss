@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 3rem 1.75rem 4rem;
+  background:
+    radial-gradient(ellipse 70% 50% at 15% 0%, rgba(126, 182, 255, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 90% 20%, rgba(126, 182, 255, 0.06), transparent 50%),
+    var(--bg);
+}
