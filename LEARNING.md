@@ -20,9 +20,9 @@
 ## Чеклист микрошагов
 
 - [x] **0. Setup** — Next App Router, `src/`, SCSS tokens, git + origin *(наставник)*
-- [ ] **1. Домен + mock** — типы `Post`, seed, публичный список (Server Component)
-- [ ] **2. Detail** — `/posts/[slug]`
-- [ ] **3. Фильтры** — поиск / теги (client island)
+- [x] **1. Домен + mock** — типы `Post`, seed, публичный список (Server Component)
+- [x] **2. Detail** — `/posts/[slug]`
+- [x] **3. Фильтры** — поиск / теги (client island)
 - [ ] **4. Route groups** — `(public)` / `(admin)` layouts
 - [ ] **5. Admin list** — таблица постов
 - [ ] **6. Admin form create** — RHF

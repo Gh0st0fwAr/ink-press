@@ -1,11 +1,13 @@
+@use '../variables' as *;
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
   padding: 1.1rem 1.75rem;
-  border-bottom: 1px solid var(--line);
-  background: rgba(23, 26, 33, 0.92);
+  border-bottom: 1px solid $line;
+  background: rgba($surface, 0.92);
   backdrop-filter: blur(10px);
 }
 
@@ -16,17 +18,17 @@
 }
 
 .brand span {
-  color: var(--accent);
+  color: $accent;
 }
 
 .nav {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  color: var(--muted);
+  color: $ink-soft;
   font-size: 0.95rem;
 }
 
 .nav a:hover {
-  color: var(--ink);
+  color: $ink;
 }

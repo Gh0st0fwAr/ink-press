@@ -1,0 +1,21 @@
+// Палитра и токены (SCSS). В компонентах: @use '../variables' as *;
+// Имена: короткое слово или word-word, без CSS --custom-properties для цветов.
+
+$bg: #0e1014;
+$surface: #171a21;
+$ink: #e8eaef;
+$ink-soft: #9aa3b2;
+$line: rgba(232, 234, 239, 0.12);
+$accent: #7eb6ff;
+$accent-soft: rgba(126, 182, 255, 0.14);
+$accent-strong: #5a9ef0;
+$white: #ffffff;
+$shadow: rgba(0, 0, 0, 0.22);
+$shadow-strong: rgba(0, 0, 0, 0.28);
+
+$radius: 14px;
+$radius-pill: 999px;
+
+// next/font вешает семейство на html — это не цвет, оставляем мост к рантайму
+$font-sans: var(--font-geist-sans), 'Segoe UI', sans-serif;
+$font-mono: var(--font-geist-mono), ui-monospace, monospace;

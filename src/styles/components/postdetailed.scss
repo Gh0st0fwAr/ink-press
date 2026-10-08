@@ -1,0 +1,89 @@
+@use '../variables' as *;
+
+.post-detailed {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+.post-detailed__title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: $white;
+}
+
+.post-detailed__timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 18px 0;
+  border-bottom: 2px solid $white;
+}
+
+.post-detailed__created,
+.post-detailed__updated {
+  margin: 0;
+  font-size: 0.85rem;
+  color: $ink-soft;
+}
+
+.post-detailed__body {
+  margin: 1.75rem 0 0;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: $ink;
+  white-space: pre-wrap;
+}
+
+.post-detailed__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 2.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $line;
+
+  .tag {
+    min-height: 1.85rem;
+    padding: 0.3rem 0.85rem;
+    font-size: 0.82rem;
+  }
+}
+
+.post-detailed__footer {
+  display: flex;
+  align-items: center;
+  margin-top: 2.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $line;
+}
+
+.post-detailed__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: $radius;
+  background: $accent;
+  color: $bg;
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    background: $accent-strong;
+    color: $bg;
+    transform: translateY(-1px);
+  }
+}

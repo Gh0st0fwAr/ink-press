@@ -1,4 +1,10 @@
+import { mockData } from '@/data/mock';
+import { Feed } from '@/components/Feed';
+// import { Card } from '@/components/Card';
+import type { Post } from '@/data/types';
+
 export default function Home() {
+  const posts: Post[] = mockData;
   return (
     <main className="content">
       <section className="hero">
@@ -10,20 +16,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="grid" aria-label="Что будет в проекте">
-        <article className="card">
-          <h2>Публичка</h2>
-          <p>Лента, теги, поиск и страница поста на App Router.</p>
-        </article>
-        <article className="card">
-          <h2>Админка</h2>
-          <p>CRUD, черновик / опубликовано, учебный вход.</p>
-        </article>
-        <article className="card">
-          <h2>Стек позже</h2>
-          <p>Node API и PostgreSQL — после mock и React-слоя.</p>
-        </article>
-      </section>
+      <Feed posts={posts}></Feed>
     </main>
   )
 }
