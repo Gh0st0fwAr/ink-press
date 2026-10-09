@@ -1,0 +1,59 @@
+@use '../variables' as *;
+
+.admin {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  background:
+    radial-gradient(ellipse 60% 40% at 10% 0%, rgba($accent, 0.1), transparent 55%),
+    radial-gradient(ellipse 45% 35% at 95% 15%, rgba($accent, 0.05), transparent 50%),
+    $bg;
+}
+
+.admin__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 2.25rem 1.75rem 0.5rem;
+  max-width: 72rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.admin__eyebrow {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.admin__title {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  color: $ink;
+}
+
+.admin__lead {
+  margin: 0;
+  max-width: 36rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: $ink-soft;
+}
+
+.admin__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.25rem 1.75rem 3rem;
+}

@@ -1,9 +1,10 @@
-
+import { PostsTable } from "../components/PostsTable";
+import { mockData } from "@/data/mock";
 
 export default function AdminPage() {
     return (
         <div className="admin__content">
-            <h2>Admin page title</h2>
+            <PostsTable posts={mockData} />
         </div>
     )
 }

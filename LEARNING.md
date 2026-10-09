@@ -24,7 +24,7 @@
 - [x] **2. Detail** — `/posts/[slug]`
 - [x] **3. Фильтры** — поиск / теги (client island)
 - [x] **4. Route groups** — `(public)` / `(admin)` layouts
-- [ ] **5. Admin list** — таблица постов
+- [x] **5. Admin list** — таблица постов
 - [ ] **6. Admin form create** — RHF
 - [ ] **7. Edit + status** — draft / published
 - [ ] **8. Persist** — переход с mock на API
