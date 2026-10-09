@@ -24,16 +24,18 @@
 - [x] **2. Detail** — `/posts/[slug]`
 - [x] **3. Фильтры** — поиск / теги (client island)
 - [x] **4. Route groups** — `(public)` / `(admin)` layouts
-- [x] **5. Admin list** — таблица постов
-- [ ] **6. Admin form create** — RHF
-- [ ] **7. Edit + status** — draft / published
-- [ ] **8. Persist** — переход с mock на API
-- [ ] **9. Backend** — Node (Express или аналог) + **PostgreSQL** (SQL руками / `pg`, без Supabase/Prisma как ядра)
+- [x] **5. Admin list** — таблица постов (пока на mock)
+- [ ] **6. Backend + PostgreSQL** — Express (или аналог), таблица `posts`, SQL через `pg`
+- [ ] **7. API read** — `GET` список / один пост; админ-таблица и публичка читают API вместо mock
+- [ ] **8. Admin form create** — RHF → `POST` в API (сразу в БД, без in-memory)
+- [ ] **9. Edit + status** — форма/действия → `PATCH` (draft / published)
 - [ ] **10. Auth gate** — учебный логин в admin
 - [ ] **11. UX states** — loading / error / empty
-- [ ] **12. Deploy + README** — фронт (Vercel и т.п.) + API/БД на free tier
+- [ ] **12. Deploy + README** — фронт + API/БД на free tier
 
-**Ориентир бэка (зафиксировано):** Node + PostgreSQL «в чистом виде» — чаще так пишут в вакансиях. Prisma/Supabase не цель пета (можно упомянуть позже, если сами захотим).
+**Почему так переставили:** create/edit на `useState(mock)` пришлось бы выкинуть при появлении API. Сначала поднимаем БД и чтение, затем форма сразу пишет в REST — меньше переделок и ближе к боевому циклу «React → fetch → Node → Postgres».
+
+**Ориентир бэка (зафиксировано):** Node + PostgreSQL «в чистом виде» — чаще так пишут в вакансиях. Prisma/Supabase не цель пета (можно упомянуть позже, если сами захотим). API живёт в том же репо: папка `server/` (отдельный процесс), фронт — Next как сейчас.
 
 Шаги уточним по ходу; порядок может чуть съехать под Next-детали.
 
@@ -41,6 +43,14 @@
 
 ```bash
 cd ink-press
+npm install
+npm run dev
+```
+
+Бэк (когда появится `server/`):
+
+```bash
+cd server
 npm install
 npm run dev
 ```
