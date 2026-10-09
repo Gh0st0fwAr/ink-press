@@ -23,7 +23,7 @@
 - [x] **1. Домен + mock** — типы `Post`, seed, публичный список (Server Component)
 - [x] **2. Detail** — `/posts/[slug]`
 - [x] **3. Фильтры** — поиск / теги (client island)
-- [ ] **4. Route groups** — `(public)` / `(admin)` layouts
+- [x] **4. Route groups** — `(public)` / `(admin)` layouts
 - [ ] **5. Admin list** — таблица постов
 - [ ] **6. Admin form create** — RHF
 - [ ] **7. Edit + status** — draft / published
